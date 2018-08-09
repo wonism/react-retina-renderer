@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    ["@babel/plugin-transform-spread", { "loose": true }]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "> 10%", "ie 9"]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
