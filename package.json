@@ -1,18 +1,32 @@
 {
   "name": "react-retina-renderer",
   "version": "1.0.0",
-  "description": "React component that supports retina, prefetch and more",
-  "main": "index.js",
+  "description": "React component for rendering retina images",
+  "main": "dist/react-retina-renderer.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.js --hot --host 0.0.0.0",
     "lint": "NODE_ENV=production eslint ./src/** --config .eslintrc.js || true",
     "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wonism <jaewonism57@gmail.com>",
+  "keywords": [
+    "react",
+    "image",
+    "retina image"
+  ],
+  "homepage": "https://github.com/wonism/react-retina-renderer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonism/react-retina-renderer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wonism/react-retina-renderer/issues"
+  },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.3.0"
+    "react": ">= 16.3.0"
   },
   "dependencies": {
     "image-exists": "^1.1.0",
