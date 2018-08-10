@@ -34,3 +34,4 @@ demo
 .babelrc
 .eslintrc.js
 src
+webpack.config.js
