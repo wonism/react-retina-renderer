@@ -1,6 +1,6 @@
 {
   "name": "react-retina-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for rendering retina images",
   "main": "dist/react-retina-renderer.js",
   "scripts": {
