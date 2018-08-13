@@ -89,9 +89,10 @@ export default class Image extends Component {
 
     if (!isCheckingDone) {
       const isRetinaDisplay = isRetina();
+      const isSrcArrayed = Array.isArray(src);
 
-      if (isRetinaDisplay) {
-        if (Array.isArray(src)) {
+      if (isRetinaDisplay || isSrcArrayed) {
+        if (isSrcArrayed) {
           const retinaImage = src[1];
 
           imageExists(retinaImage, (exists) => {
